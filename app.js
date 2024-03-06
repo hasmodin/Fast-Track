@@ -52,3 +52,24 @@ function showSlides() {
   slides[slideIndex-1].style.display = "block";
   setTimeout(showSlides, 3000); // Change image every 2 seconds
 }
+
+
+// scroll to top button
+
+let myButton = document.querySelector(".myBtn");
+window.onscroll = function() {
+  scrollFunction()
+};
+
+function scrollFunction() {
+  if(document.body.scrollTop > 20 || document.documentElement.scrollTop > 20  ) {
+    myButton.style.display = "block"; 
+  } else {
+    myButton.style.display = "none";
+  }
+}
+
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
