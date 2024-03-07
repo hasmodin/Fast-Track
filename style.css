@@ -3,7 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: sans-serif;
 }
 
 /* alert bar style */
@@ -230,6 +230,8 @@ nav {
   /* sentence style */
   .sentence > h2 {
     text-align: center;
+    color: white;
+    text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
   }
   
   .sentence > p {
@@ -246,6 +248,8 @@ nav {
     font-size: 40px;
     font-weight: 600;
     text-align: center;
+    color: white;
+  text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
 
   }
 .courses-container {
@@ -291,7 +295,8 @@ nav {
   }
   .why-choose-heading>h2 {
     text-align: center;
-    
+    color: white;
+    text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
     font-size: 40px;
   }
 
@@ -377,8 +382,14 @@ nav {
     margin-top: 100px;
     margin-bottom: 80px;
     flex-wrap: wrap;
-    background-color: #F0B211;
+   
     border-bottom: 2px solid red;
+    background-image: url(fast-track-images/footer-banaer.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    
+
     
     
 }
@@ -560,4 +571,61 @@ input[type=submit]:hover {
     color: white;
     transition-duration: 1s;
 
+}
+
+/* contact-us.html  style */
+
+.about-us-heading > h2 {
+ text-align: center;
+ margin: 100px;
+ color: white;
+  text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+}
+.about-us-para {
+    text-align: center;
+    font-size: 1.2rem;
+    line-height: 1.5;
+    margin: 100px;
+    text-indent: 50px;
+}
+
+
+/* style for gallery.html page */
+.responsive {
+    padding: 4px 6px;
+    float: left;
+    width: 25%;
+    
+   
+}
+
+.gallery {
+    border: 1px solid #ccc;
+}
+.gallery:hover {
+    border: 1px solid #777;
+}
+
+.gallery img {
+    width: 100%;
+    height: auto;
+}
+
+.description{
+    padding: 15px;
+    text-align: center;
+}
+
+@media (max-width:700px) {
+
+    .responsive {
+        width: 50%;
+        margin: 6px 0;
+    }
+}
+
+@media (max-width:500px) {
+    .responsive {
+        width: 100%;
+    }
 }
