@@ -591,41 +591,28 @@ input[type=submit]:hover {
 
 
 /* style for gallery.html page */
-.responsive {
-    padding: 4px 6px;
-    float: left;
-    width: 25%;
-    
-   
-}
-
 .gallery {
-    border: 1px solid #ccc;
-}
-.gallery:hover {
     border: 1px solid #777;
+}
+.gallery-desc {
+    text-align: center;
+    padding: 15px;
+    color: black;
+}
+.gallery-container {
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+
 }
 
 .gallery img {
-    width: 100%;
-    height: auto;
+    width: 300px;
+    height: 300px;
+    
 }
-
-.description{
-    padding: 15px;
-    text-align: center;
-}
-
-@media (max-width:700px) {
-
-    .responsive {
-        width: 50%;
-        margin: 6px 0;
-    }
-}
-
-@media (max-width:500px) {
-    .responsive {
-        width: 100%;
-    }
+.gallery img:hover {
+    border: 1px solid #ccc;
 }
